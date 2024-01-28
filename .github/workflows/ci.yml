@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
       - name: Set up Conda env
-        uses: mamba-org/setup-micromamba@63849fa5f38bd7edfb2c4b518206ea9eee3502d1
+        uses: mamba-org/setup-micromamba@8767fb704bd78032e9392f0386bf46950bdd1194
         with:
           environment-file: environment.yml
           environment-name: test-env
