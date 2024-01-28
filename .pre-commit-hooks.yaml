@@ -1,5 +1,5 @@
-- id: rust-conda
-  name: rust-conda
+- id: cargo-fmt-conda
+  name: cargo-fmt-conda
   description: 'Run `cargo fmt` for formatting rust sources.'
   entry: cargo fmt --
   language: conda
