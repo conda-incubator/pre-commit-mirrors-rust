@@ -1,0 +1,7 @@
+# This file is managed by Copier; DO NOT EDIT OR REMOVE.
+_commit: v0.1.4
+_src_path: git@github.com:quantco/copier-template-pre-commit-mirrors
+description: Run `cargo fmt` for formatting rust sources.
+entry: cargo fmt --
+tool: rust
+url: https://github.com/rust-lang/rust
